@@ -1,0 +1,213 @@
+.header .logo{
+    position:relative;
+}
+.header .logo .miaosha{
+    position:absolute;
+    left: 183px;
+    top: 17px;
+
+    width: 85px;
+    height: 33px;
+
+    line-height: 33px;
+
+    border-left: 1px solid #b1191a;
+}
+.header .logo .miaosha img{
+    margin-left: 12px;
+}
+
+/* 导航栏 */
+.nav{
+    height: 45px;
+    width: 1200px;
+
+    border-bottom: 2px solid #b1191a;
+}
+.nav a{
+    float: left;
+
+    margin: 0px 27px 0px 27px;
+
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.nav a:nth-child(n+4){
+    margin: 0px 23px 0px 23px;
+
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+.nav a:hover{
+    color: #b1191a;
+}
+
+/* 女鞋 */
+.nvxie{
+    height: 120px;
+    width: 1200px;
+    
+    background:white url("../images/矩形39.png") no-repeat center;
+
+    text-align: center;
+    margin-bottom: 25px;
+}
+.nvxie h3{
+    padding: 25px 0 20px 0;
+
+    color: #c81523;
+    font-size: 24px;
+}
+.nvxie h3 img{
+    vertical-align: text-top;
+}
+.nvxie p{
+    position: relative;
+
+    font-size: 16px;
+}
+.nvxie p::after{
+    position: absolute;
+    top: 12px;
+    right: 490px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    border-top: 1px solid black;
+}
+.nvxie p::before{
+    position: absolute;
+    top: 12px;
+    left: 490px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+/* 主体手机部分 */
+.shopmain{
+    height: 2000px;
+    }
+    .shopmain ul li{
+        height: 470px;
+    }
+.shopmain ul li>div{/*每个手机的大盒子*/
+    float: left;
+
+    width: 290px;
+    height: 470px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+/*因为原来没有边框 加了边框后盒子会移动  所以在原来的盒子加上边框  颜色透明*/
+.shopmain ul li>div:hover{
+    border: 1px solid #e60012;
+}
+.shopmain ul li>div:last-child{/*最后一个没有右外边距*/
+    margin-right: 0;
+}
+.shopmain ul li div .shouji{/*手机盒子*/
+    height: 297px;
+    width: 100%;
+}
+.shopmain ul li div .anniuyiwai{
+    padding: 0px 11px 0px 11px;
+
+}
+.shopmain ul li div img{/*手机图片*/
+    width: 100%;
+}
+.shopmain ul li div h2{/*手机描述*/
+    font-size: 14px;
+    font-weight: 400;
+}
+.shopmain ul li div h3{/*价格*/
+    padding-top: 12px;
+    padding-bottom: 6px;
+    font-size: 22px;
+    color: #e60012;
+}
+.shopmain ul li div h3 i{/*价格删除*/
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.shopmain ul li div p{/*进度条已售*/
+    margin-bottom: 10px;
+}
+.shopmain ul li div p b{/*进度条*/
+    display: inline-block;
+    position: relative;
+
+    width: 135px;
+    height: 12px;
+    margin: 0 10px 0 10px;
+
+    border-radius: 7px;
+    border: 1px solid #e12228;
+}
+.shopmain ul li div p b::after{/*进度条里面*/
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    content: '';
+
+    width: 120px;
+    height: 12px;
+
+    background-color: #ed282e;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.shopmain ul li div h1{/*立即抢购*/
+    width: 100%;
+    height: 51px;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+
+    font-weight: 400;
+    background-color : #b1191a;
+}
+/*回到顶部*/
+.shopmain ul .huidaodingbu{/*回到顶部大盒子*/
+    position: absolute;
+    right: -82px;
+    top: -135px;
+}
+.shopmain ul .huidaodingbu div{/*回到顶部两个盒子*/
+    height: 70px;
+    width: 70px;
+    background-color: #b1191a;
+
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    font-size: 45px;
+}
+.shopmain ul .huidaodingbu .TOP1{/*TOP*/
+    position: relative;
+
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+.shopmain ul .huidaodingbu .TOP1::after{/*TOP上面的箭头*/
+    font-family: 'icomoon';
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: -20px;
+}
+.shopmain ul li:last-child{/*最后一个li个相对定位*/
+    position: relative;
+}

@@ -1,0 +1,44 @@
+*{/*清除浏览器自带内外边距 防止盒子内容超出*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{/*背景颜色 字体大小/行高倍数 字体样式 颜色*/
+    background-color: #fff;
+    font: 12px/1.5 Microsoft Yahei,Heiti SC, tahoma ,arial,Hiragino Sans GB,"\5B8B\4F53";
+    color: #666
+    
+}
+a{/*取消超链接下划线*/
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    color: #c81623;
+}
+i,em{/*取消斜体的倾斜*/
+    font-style: normal;
+}
+li{/*清除列表的点*/
+    list-style: none;
+}
+img{/*文字和图片居中对齐*/
+    vertical-align: middle;
+}
+b{
+    font-weight: 400;
+}
+button{/*鼠标移动到按钮变成小手*/
+    cursor: pointer;
+}
+/* 清除浮动调用clearfix */
+.clearfix:after{
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+.clearfix{
+    *zoom: 1;
+}

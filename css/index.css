@@ -1,0 +1,805 @@
+
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 47px;
+    border-bottom:2px solid  #b1191a ;
+}
+.nav_main{
+    width: 1202px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 47px;
+}
+.nav .nav_main div:first-child{
+    float: left;
+    width: 210px;
+    margin-right: 15px;
+    color: white;
+    background-color: #b1191a;
+    text-align: center;
+}
+.nav .nav_main ul li{
+    font-size: 16px;
+}
+.nav .nav_main ul .youqu{
+    font-size: 14px;
+}
+.nav .nav_main ul li{/*li里面的文字长短不一样 所以不设置宽度 让padding挤开盒子*/
+    float: left;
+    padding:0 25px 0 25px;
+}
+
+/* 盒子主体大图 */
+.zhuti{
+    height: 466px;
+}
+.zhuti div{
+    float: left;
+}
+.zhuti .zuofudong{/*左边浮动的盒子 巧用margin负值 左边的家相对于导航栏的margin挤出去*/
+    width: 66px;
+    height: 344px;
+    margin-left: -78px;
+    margin-top: 167px;
+}
+.zhuti .zuofudong ul a{/*小li*/
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+.zhuti .zuofudong ul a:first-child{
+    background-color: #c81623;
+    color: white;
+}
+.zhuti .leftnav{
+    height: 100%;
+    width: 210px;
+    background-color: pink;  
+    
+}
+.zhuti .leftnav ul a{
+    display: block;
+    height: 31px;
+    padding-left: 12px;
+    color: white;
+    line-height: 31px;
+    font-size: 15px;
+    background-color: #c81623;
+}
+.zhuti .leftnav ul a:hover{
+    background-color: white;
+    color: #c81623;
+}
+
+
+.zhuti .datu{
+    margin: 10px 10px 0 10px;
+    width: 721px;
+    height: 455px;
+
+}
+
+
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 359px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+.current {
+    background-color: #fff;
+}
+
+
+.zhuti .rightnav{/*右边的大盒子*/
+    width: 250px;
+    height: 455px;
+    margin-top:10px ;
+}
+.zhuti .kuaibao{/*品优购快报*/
+    height: 165px;
+    width: 248px;
+}
+.zhuti .kuaibao ul{
+    border: 1px solid #e4e4e4;
+}
+.zhuti .kuaibao ul .kuaibao_top{/*快报第一个行*/
+    margin-left: 14px;
+    height: 34px;
+    width: 233px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.zhuti .kuaibao ul .kuaibao_top a{/*快报更多*/
+    float: right;
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 32px;
+}
+.zhuti .kuaibao ul a:nth-child(2){/*快报第2行*/
+   margin-top: 2px;
+}
+.zhuti .kuaibao ul a{
+    display: block;  
+     height: 25px;
+    margin-left: 16px;
+    line-height: 25px;
+}
+.zhuti .kuaibao ul .kuaibao_bottom{/*快报最后一个a*/
+    margin-bottom: 2px;
+}
+.zhuti .huafeitubiao{/*话费那些小图标*/
+    width: 250px;
+    height: 210px;
+}
+.zhuti .huafeitubiao a{
+    float: left;
+    width: 62px;
+    text-align: center;
+}
+.zhuti .huafeitubiao a li{
+    border: 1px solid #e4e4e4;
+    height: 70px;
+}
+.zhuti .huafeitubiao a li em{
+    font-size: 22px;
+    color: #c81623;
+    text-align: center;
+    line-height: 40px;
+}
+.zhuti .nanzhuangtupian{/*男装新势力图片*/
+    width: 248px;
+    height: 74px;
+    margin-top: 6px;
+    background-color: pink;
+}
+.zhuti .nanzhuangtupian img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 今日推荐 */
+.jinrituijian{/*今日推荐*/
+    height: 163px;
+    margin-top: 10px;
+}
+.jinrituijian div{/*今日推荐大盒子*/
+    float: left;
+}
+.jinrituijian div:nth-child(n+2){/*今日推荐后面4个盒子*/
+    background-color: #ebebeb;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+}
+.jinrituijian div:last-child{/*今日推荐最后一个没有边框*/
+    border: 0px;
+}
+.jinrituijian .wenzitupian{/*今日推荐4个盒子里面的文字和图片盒子内外边距*/
+    padding: 10px 18px 10px 18px;
+}
+.jinrituijian .wenzitupian .wenzi{/*今日推荐li里的文字盒子*/
+    /* 文字盒子不设置高度 让li撑开文字撑开盒子 */
+    width: 80px;
+    height: 130px;
+    margin-top: 13px;
+}
+.jinrituijian .wenzitupian .tupian{/*今日推荐li里的图片盒子*/
+    width: 130px;
+    height: 130px;
+    margin-top: 13px;
+    padding-left: 26px;
+}
+.jinrituijian .wenzi ul li{/*文字*/
+    font-size: 14px;
+}
+.jinrituijian .wenzi ul li:first-child{
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.jinrituijian .wenzi ul li:nth-child(2){
+    padding: 0 1px;
+    color: white;
+    background-color: #00a0e8;
+    text-align: center;
+}
+.jinrituijian .wenzi ul li:last-child{
+    font-size: 12px;
+}
+.jinrituijian .wenzi span{/*团购*/
+    display: block;
+    width: 60px;
+    height: 20px;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color:#0085fb;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+/* 猜你喜欢 */
+.cainixihuan .biaoti{/*猜你喜欢标题盒子*/
+    width: 100%;
+    height: 42px;
+    margin-top: 20px;
+}
+.cainixihuan .biaoti h3{/*猜你喜欢标题文字*/
+    float: left;
+    font-size: 18px;
+    height: 100%;
+    line-height: 42px;
+    font-weight: 400;
+    
+}
+.cainixihuan .biaoti a{/*猜你喜欢换一批*/
+    float: right;
+    line-height: 42px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.cainixihuan .neirong{/*猜你喜欢大盒子*/
+    height: 233px;
+    width: 101%;
+    border: 1px solid #ededed;
+}
+.cainixihuan .neirong ul a{/*猜你喜欢每个小盒子*/
+    float: left;
+    width: 201px;
+    margin-top: 20px;
+}
+.cainixihuan .neirong ul a div{/*猜你喜欢图片盒子*/
+    line-height:140px;/*父盒子设置文字水平居中 文字垂直居中即可实现图片水平垂直居中*/
+    text-align: center;
+
+}
+.cainixihuan .neirong ul a p{/*猜你喜欢产品介绍文字*/
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 1px solid  #ededed;
+}
+.cainixihuan .neirong ul a p:last-child{
+    border: 0;}
+.cainixihuan .neirong ul a h2{/*猜你喜欢价格文字*/
+    font-size: 18px;
+    color: #df3033;
+    border-right: 1px solid  #ededed;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.cainixihuan .neirong ul a .last{/*去掉最后一个的边框*/
+    border:0;
+}
+
+/* 传智播客 */
+.chuanzhiboke .biaoti{/*传智播客标题盒子*/
+    width: 100%;
+    height: 42px;
+    margin-top: 20px;
+}
+.chuanzhiboke .biaoti h3{/*传智播客标题文字*/
+    float: left;
+    font-size: 18px;
+    height: 100%;
+    line-height: 42px;
+    font-weight: 400; 
+}
+.chuanzhiboke .neirong{/*传智播客内容盒子*/
+    height: 405px;
+    width: 100%;
+}
+.chuanzhiboke .neirong>div{/*传智播客内容盒子*/
+    float: left;
+}
+.chuanzhiboke .neirong .haodongxi{/*好东西盒子*/
+    width: 227px;
+}
+.chuanzhiboke .neirong .haodongxi .wenzi{/*好东西文字*/
+    margin-left: 10px;
+}
+.chuanzhiboke .neirong .haodongxi .biaoti{/*好东西标题*/
+    height: 40px;
+    margin-top: 0px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+
+    border-bottom: 1px solid  #ededed;
+    border-top: 1px solid  #ededed;
+
+}
+.chuanzhiboke .neirong .haodongxi .darentuijian{/*好东西 达人推荐*/
+    height: 197px;
+
+    border-bottom: 1px solid  #ededed;
+    float: left;
+}
+.chuanzhiboke .neirong .haodongxi .darentuijian .wenzi{
+    float: left;
+
+    width: 82px;
+    margin-top: 70px;
+}
+.chuanzhiboke .neirong .haodongxi .darentuijian .wenzi .daren{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.chuanzhiboke .neirong .haodongxi .darentuijian .wenzi .red{
+    color: #e60012;
+}
+.chuanzhiboke .neirong .haodongxi .darentuijian img{
+    float: right;
+    margin-top: 20px;
+}
+.chuanzhiboke .neirong .haodongxi .faxianhaowu{/*好东西 发现好物*/
+    float: left;
+}
+.chuanzhiboke .neirong .haodongxi .faxianhaowu .wenzi{
+    float: left;
+
+    width: 82px;
+    margin-top: 50px;
+}
+.chuanzhiboke .neirong .haodongxi .faxianhaowu .wenzi .faxian{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.chuanzhiboke .neirong .haodongxi .faxianhaowu .wenzi .red{
+    color: #e60012;
+}
+.chuanzhiboke .neirong .haodongxi .faxianhaowu img{
+    float: right;
+    margin-top: 10px;
+
+}
+
+/*品牌街*/
+.chuanzhiboke .neirong .pinpaijie{
+    width: 400px;
+    background-color: #f7f7f7; 
+    
+    border: 1px solid  #ededed;
+}
+.chuanzhiboke .neirong .pinpaijie div{
+    float: left;
+}
+.chuanzhiboke .neirong .pinpaijie .biaoti{
+    height: 40px;
+    margin-top: 0px;
+    
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    
+    border-bottom: 1px solid  #ededed;
+
+}
+.chuanzhiboke .neirong .pinpaijie .suboer{/*苏泊尔*/
+    height: 197px;
+}
+.chuanzhiboke .neirong .pinpaijie .suboer .wenzi{/*苏泊尔文字*/ 
+    float: left;
+
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.chuanzhiboke .neirong .pinpaijie .suboer .subo{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.chuanzhiboke .neirong .pinpaijie .suboer .wenzi .red{
+    color: #e60012;
+}
+.chuanzhiboke .neirong .pinpaijie .suboer .tupian{/*苏泊尔图片*/ 
+    margin-left: 57px;
+    margin-top: 15px;
+}
+.chuanzhiboke .neirong .pinpaijie .guojidapai{/*国际大牌*/
+
+    width: 201px;
+    height: 160px;
+    border: 1px solid  #ededed;
+
+}
+.chuanzhiboke .neirong .pinpaijie .guojidapai .wenzi{/*国际大牌文字*/ 
+    float: left;
+
+    margin-top: 60px;
+    margin-left: 2px;
+}
+.chuanzhiboke .neirong .pinpaijie .guojidapai img{/*国际大牌图片*/
+      width: 111px; 
+      margin-top: 20px;
+}
+.chuanzhiboke .neirong .pinpaijie .guojidapai .dapai{/*国际大牌第一行文字*/
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.chuanzhiboke .neirong .pinpaijie .guojidapai .wenzi .red{/*红色字体*/
+    color: #e60012;
+}
+.chuanzhiboke .neirong .pinpaijie .benzhoutemai{/*本周特卖*/ 
+
+    width: 192px;
+    height: 160px;
+}
+.chuanzhiboke .neirong .pinpaijie .benzhoutemai .wenzi{/*本周特卖文字*/ 
+    float: left;
+
+    margin-top: 60px;
+    margin-left: 2px;
+}
+.chuanzhiboke .neirong .pinpaijie .benzhoutemai .temai{/*本周特卖第一行文字*/
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.chuanzhiboke .neirong .pinpaijie .benzhoutemai .wenzi .red{/*红色字体*/
+    color: #e60012;
+}
+.chuanzhiboke .neirong .pinpaijie .benzhoutemai img{/*本周特卖图片*/
+    margin-top: 20px;
+    width: 108px;
+}
+.chuanzhiboke .pinpaitupian{/*品牌图片*/
+    float: left;
+}
+
+/* 共同样式 */
+.jiadianshoujidiannao{
+    height: 415px;
+}
+.jiadianshoujidiannao .biaoti_nav{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    
+    line-height: 40px;
+
+    border-bottom: 2px solid #c81623;
+}
+.jiadianshoujidiannao .biaoti{
+    float: left;
+
+    font-size: 18px;
+    color: #c81623;
+}
+.jiadianshoujidiannao .zuonav ul{
+  float: right;
+}
+.jiadianshoujidiannao .zuonav ul a{
+    float: left;
+}
+.jiadianshoujidiannao .zuonav ul li{
+    float: left;
+}
+.jiadianshoujidiannao .zuonav ul span{
+    margin: 0 15px 0 15px;
+}
+.jiadianshoujidiannao .zuonav ul li:hover+span{
+    color: #666;
+}
+/*内容*/
+.jiadianshoujidiannao .main{
+    height: 360px;
+}
+.jiadianshoujidiannao .main>div{
+    float: left;
+}
+.jiadianshoujidiannao .main .one{/*第一个盒子*/
+
+    width: 210px;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+.jiadianshoujidiannao .main .one .wenzi1{/*文字1*/
+    height: 100px;
+}
+.jiadianshoujidiannao .main .one .wenzi1 ul li{
+    width: 105px;
+    height: 33px;
+    float: left;
+    
+    text-align: center;
+    line-height: 33px;
+
+    border-bottom: 1px solid #ededed;
+}
+.jiadianshoujidiannao .main .one .wenzi2{/*文字2*/
+    height: 40px;
+    margin-top: 25px;
+
+    color: #c81623;
+    text-align: center;
+}
+.jiadianshoujidiannao .main .one .wenzi2 p{
+    font-size: 18px;
+}
+.jiadianshoujidiannao .main .one .tupian{/*图片*/
+    line-height: 170px;
+    text-align: center;
+}
+.jiadianshoujidiannao .main .two{/*第二个盒子*/
+
+    width: 329px;
+    height: 100%;
+
+    background-color: #aed6d8;
+}
+.jiadianshoujidiannao .main .two .wenzi{
+    margin-top: 38px;
+    margin-left: 30px;
+    height: 41px;
+
+    color: #066c7d;
+}
+.jiadianshoujidiannao .main .two .wenzi a{
+    display:block;
+    color: #066c7d;
+    font-size: 18px;
+}
+.jiadianshoujidiannao .main .two .tupian{
+    line-height: 280px;
+    text-align: center;
+}
+.jiadianshoujidiannao .main .there{/*第三个盒子上*/
+    height: 100%;
+    width: 219px;
+
+}
+.jiadianshoujidiannao .main .there .shang{
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.jiadianshoujidiannao .main .there .shang,.xia {
+    height: 155px;
+    width: 219px;
+}
+.jiadianshoujidiannao .main .there .shang .wenzi1{
+    margin: 25px 0 0 20px;
+}
+.jiadianshoujidiannao .main .there .shang .wenzi1 p{
+    font-size: 16px;
+}
+.jiadianshoujidiannao .main .there .shang .wenzi1 span{
+    color: #e60012;
+    font-size: 14px;
+}
+.jiadianshoujidiannao .main .there .shang .tupian1{
+    float: right;
+}
+.jiadianshoujidiannao .main .there .shang .tupian1 img{
+    padding-bottom: 1px;
+}
+.jiadianshoujidiannao .pinpai{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+.jiadianshoujidiannao .main .there .xia{/*第三个盒子下*/
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.jiadianshoujidiannao .main .there .xia .wenzi2{
+    margin: 25px 0 0 20px;
+}
+.jiadianshoujidiannao .main .there .xia .wenzi2 p{
+    font-size: 16px;
+}
+.jiadianshoujidiannao .main .there .xia .wenzi2 span{
+    color: #e60012;
+    font-size: 14px;
+}
+.jiadianshoujidiannao .main .there .xia .tupian2{
+    float: right;
+}
+.jiadianshoujidiannao .main .there .xia .tupian2 img{
+    padding-bottom: 1px;
+}
+.jiadianshoujidiannao .main .four{/*第四个盒子*/
+    width: 219px;
+    height: 100%;
+
+    text-align: center;
+
+}
+.jiadianshoujidiannao .main .four .wenzi{
+
+
+    margin: 70px 0px 10px 0px;
+    height: 45px;
+
+    font-size: 16px;
+    color: #999;
+}
+.jiadianshoujidiannao .main .four .wenzi p{
+    font-size: 18px;
+    color: #000;
+}
+.jiadianshoujidiannao .main .four .tupian{
+    line-height: 235px;
+}
+.jiadianshoujidiannao .main .five{/*第五个盒子*/
+    height: 100%;
+    width: 219px;
+}
+.jiadianshoujidiannao .main .five .shang{
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.jiadianshoujidiannao .main .five .shang,.xia {
+    height: 155px;
+    width: 219px;
+}
+.jiadianshoujidiannao .main .five .shang .wenzi1{
+    margin: 25px 0 0 20px;
+}
+.jiadianshoujidiannao .main .five .shang .wenzi1 p{
+    font-size: 16px;
+}
+.jiadianshoujidiannao .main .five .shang .wenzi1 span{
+    color: #e60012;
+    font-size: 14px;
+}
+.jiadianshoujidiannao .main .five .shang .tupian1{
+    float: right;
+}
+.jiadianshoujidiannao .main .five .shang .tupian1 img{
+    padding-bottom: 1px;
+}
+.jiadianshoujidiannao .main .five .xia{/*第五个盒子下*/
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.jiadianshoujidiannao .main .five .xia .wenzi2{
+    margin: 25px 0 0 20px;
+}
+.jiadianshoujidiannao .main .five .xia .wenzi2 p{
+    font-size: 16px;
+}
+.jiadianshoujidiannao .main .five .xia .wenzi2 span{
+    color: #e60012;
+    font-size: 14px;
+}
+.jiadianshoujidiannao .main .five .xia .tupian2{
+    float: right;
+}
+.jiadianshoujidiannao .main .five .xia .tupian2 img{
+    padding-bottom: 1px;
+}
+.jiadianshoujidiannao .pinpai{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 热门疯抢 */
+.remenfengqiang {
+    height: 330px;
+}
+.remenfengqiang .biaoti{/*标题*/
+    height: 45px;
+
+    margin-top: 20px;
+    color: #333333;
+    font-size: 18px;
+}
+.remenfengqiang .main{
+    position:relative;
+
+    height: 285px;
+    width: 100%;
+
+    font-size: 16px;
+    color: #df3033;
+
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+
+}
+.remenfengqiang .main a{
+    font-weight: 700;
+    color: #df3033;
+}
+.remenfengqiang .main img{
+    height: 100%;
+    width: 1200px;
+}
+.remenfengqiang .main p{
+    position:absolute;
+    left: 86px;
+    font-weight: 700;
+    top: 235px;
+}
+.remenfengqiang .main i{
+    position:absolute;
+    left: 366px;
+    font-weight: 700;
+    top: 58px;
+}
+.remenfengqiang .main span{
+    position:absolute;
+    left: 366px;
+    font-weight: 700;
+    top: 202px;
+}
+.remenfengqiang .main em{
+    position:absolute;
+    left: 591px;
+    font-weight: 700;
+    top: 58px;
+}
+.remenfengqiang .main b{
+    position:absolute;
+    left: 591px;
+    font-weight: 700;
+    top: 202px;
+}
+.remenfengqiang .main div{
+    position:absolute;
+    left: 821px;
+    font-weight: 700;
+    top: 58px;
+}
+.remenfengqiang .main a{
+    position:absolute;
+    left: 821px;
+    top: 200px;
+}

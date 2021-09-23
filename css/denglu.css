@@ -1,0 +1,163 @@
+body>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* logo */
+.logo{
+    height: 80px;
+    line-height: 80px;
+
+    border-bottom: 2px solid black;
+}
+/*注册大盒子*/
+.zuhce_main{
+
+    /* height: 520px; */
+    margin-top: 23px;
+
+    border: 1px solid #dfdfdf;
+}
+/* 注册标题 */
+.zuhce_main .zhuce{
+    height: 40px;
+    background-color: #ececec;
+}
+/* 注册左边 */
+.zuhce_main .zhuce h3{
+    float: left;
+
+    margin-left: 10px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+/* 注册右边 */
+.zuhce_main .zhuce p{
+    float: right;
+
+    font-size: 14px;
+    line-height: 40px;
+
+}
+/* 注册右边登录 */
+.zuhce_main .zhuce p a{
+
+
+    margin-right: 10px;
+
+    color: #c81623;
+
+}
+
+/* 注册输入框大盒子 */
+  
+li {
+    list-style: none;
+}
+
+.big {
+    /* margin: 100px auto; */
+    padding-top: 100px;
+    width: 1200px;
+    /* height: 600px; */
+
+    border: 1px solid #ccc
+}
+
+.big li {
+    margin: 10px auto;
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+.big li div {
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+
+.big li input {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    width: 240px;
+    height: 35px;
+}
+
+.big li span {
+    margin-left: 10px;
+    width: 200px;
+    height: 100%;
+}
+
+.mimaRed {
+    color: red;
+}
+
+.mimagreen {
+    color: green;
+}
+
+/* 同意协议 */
+.shuru .big .agree{
+    margin-left: 400px !important;
+    margin: 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+.agree p{
+    display: inline-block;
+    
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+/*完成注册*/
+
+.yes a{
+    text-align: center;
+
+    margin-left: 110px;
+    display: block;
+    width: 202px;
+    height: 35px;
+    background-color: #c81623;
+
+    color: white;
+    line-height: 38px;
+}
+/* 页面底部 */
+.footer{
+    height: 120px;
+    background-color: #fff;
+}
+.footer .mod_copyright{
+    height: 102px;
+    width: 1202px;
+
+    text-align: center;
+} 
+.footer .mod_copyright ul{
+    margin-top: 24px;
+    height: 30px;
+}
+.footer .mod_copyright ul span{
+    margin:0 15px 0 15px;
+}
+.footer .mod_copyright ul a:first-child{
+    margin-left: 120px;
+}
+.footer .mod_copyright ul a,span{
+    float: left;
+}
+.footer .mod_copyright p:first-child{
+    margin-top: 15px;float: right;
+}

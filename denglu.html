@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <title>品优购-综合全网首选-正品低价、品质保证、配送及时、轻松购物！</title>
+    <!-- 网页说明 -->
+    <meta name="description" content="品优购商城-专门的综合网上购物商城，销售加点、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品、等数挽歌品牌优质商品" />
+    <!-- 网页搜索关键字 -->
+    <meta name="keywords" content="网上购物，网上商城，手机，笔记本，电脑，MP3，CD，VCD，DV，相机，数码，配件，手表，存储卡，京东" />
+    <!-- favicon图标(品)  -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 字体图标的引用 -->
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?hensvh');
+            src: url('fonts/icomoon.eot?hensvh#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?hensvh') format('truetype'),
+                url('fonts/icomoon.woff?hensvh') format('woff'),
+                url('fonts/icomoon.svg?hensvh#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        em {
+            font-family: 'icomoon';
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- logo -->
+    <div class="logo">
+        <a href="index.html"><img src="images/logo2.png" alt=""></a>
+    </div>
+    <!-- 主体内容 -->
+    <div class="zuhce_main">
+        <!-- 注册 -->
+        <div class="zhuce">
+            <h3>注册新用户</h3>
+            <p>我有账号，去<a>登陆</a></p>
+        </div>
+        <!-- 输入框 -->
+        <div class="shuru">
+            <div class="shuru_hezi">
+                <div class="big">
+                    <li>
+                        <div>手机号</div><input type="text" class="sj"><span></span>
+                    </li>
+                    <li>
+                        <div>qq</div><input type="text" class="qq"><span></span>
+                    </li>
+                    <li>
+                        <div>昵称</div><input type="text" class="nc"><span></span>
+                    </li>
+                    <li>
+                        <div>短信验证码</div><input type="text" class="dx"><span></span>
+                    </li>
+                    <li>
+                        <div>密码</div><input type="password" class="mm"><span></span>
+                    </li>
+                    <li>
+                        <div>确认密码</div><input type="password" class="yesmm"><span></span>
+                    </li>
+                    <li class="agree">
+                        <input type="checkbox" style="width: 15px;height: 15px;"> 同意协议并注册 《知果果用户协议》
+                    </li>
+                    <li class="yes"><a href="">完成注册</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 页面底部 -->
+    <div class="footer">
+        <!-- 版权信息 -->
+        <div class="mod_copyright">
+            <ul>
+                <a href="">
+                    <li>关于我们</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>联系我们</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>商家入驻</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>营销中心</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>手机品优购</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>友情链接</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>友情链接</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>品优购社区</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>品优购公益</li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li>English Site </li>
+                </a>
+                <span>|</span>
+                <a href="">
+                    <li> Contact U</li>
+                </a>
+            </ul>
+            <p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
+            <p> 京ICP备08001421号京公网安备110108007702</p>
+
+        </div>
+    </div>
+    <script>
+        // 鼠标离开input时执行
+        var sj = document.querySelector('.sj');
+        var sjZ = /^1[3|4|5|7|8]\d{9}$/;
+        var qq = document.querySelector('.qq');
+        var qqZ = /^[1-9]{5,}$/
+        var nc = document.querySelector('.nc')
+        var ncZ = /^[\u4e00-\u9fa5]{2,8}$/
+        var dx = document.querySelector('.dx')
+        var dxZ = /^\d{6}$/
+        var mm = document.querySelector('.mm')
+        var mmZ = /^[0-9a-zA-Z]{6,16}$/
+        var yesmm = document.querySelector('.yesmm')
+        fn(sj, sjZ)
+        fn(qq, qqZ)
+        fn(nc, ncZ)
+        fn(dx, dxZ)
+        fn(mm, mmZ)
+        function fn(ss, zz) {
+            ss.onblur = function () {
+                if (ss.value == '') {
+                    this.nextElementSibling.innerText = '';
+                }
+                else {
+                    if (zz.test(ss.value)) {
+                        this.nextElementSibling.className = 'mimagreen';
+                        this.nextElementSibling.innerText = '格式正确';
+                    }
+                    else {
+                        this.nextElementSibling.className = 'mimaRed';
+                        this.nextElementSibling.innerText = '格式错误';
+                    }
+                }
+            }
+        }
+        //  确认密码要密码一致
+        yesmm.addEventListener('blur', function () {
+            if (mm.value == yesmm.value) {
+                this.nextElementSibling.className = 'mimagreen';
+                this.nextElementSibling.innerText = '密码一致';
+            }
+            else {
+                this.nextElementSibling.className = 'mimared';
+                this.nextElementSibling.innerText = '密码不一致';
+            }
+        })
+        // // focus blur
+        // if ()
+
+    </script>
+</body>
+
+</html>
